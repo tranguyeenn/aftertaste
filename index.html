@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favorite Songs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1>Favorite Songs</h1>
+    <p>Songs that live rent-free in my head.</p>
+  </header>
+
+  <main class="container">
+
+    <section class="add-song">
+      <form id="song-form">
+        <input id="title" placeholder="Song title" required />
+        <input id="artist" placeholder="Artist" required />
+
+        <select id="mood">
+          <option>Chill</option>
+          <option>Hype</option>
+          <option>Sad</option>
+          <option>Focus</option>
+        </select>
+
+        <label class="favorite">
+          <input type="checkbox" id="favorite" />
+          ★ Favorite
+        </label>
+
+        <button type="submit">Add Song</button>
+      </form>
+    </section>
+
+    <nav class="nav">
+      <button type="button" data-page="all" class="active">All Songs</button>
+      <button type="button" data-page="favorites">Favorites</button>
+    </nav>
+
+    <section class="page active" id="all-page">
+      <div class="song-list" id="all-list"></div>
+    </section>
+
+    <section class="page" id="favorites-page">
+      <div class="song-list" id="favorites-list"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

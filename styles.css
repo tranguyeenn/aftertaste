@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #020617;
+}
+
+.header p {
+  opacity: 0.7;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+/* Form */
+.add-song {
+  background: #020617;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+input, select {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  padding: 0.6rem;
+  background: #22c55e;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.favorite {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Songs */
+.song-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.song-card {
+  background: #020617;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.song-card h3 {
+  margin: 0;
+}
+
+.song-card .artist {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.song-card .meta {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.star {
+  color: #facc15;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav button {
+  background: none;
+  border: none;
+  color: #e5e7eb;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.nav button.active {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
